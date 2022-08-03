@@ -31,3 +31,22 @@ body {
     background-color: black;
 }
 
+.size {
+    display: flex;
+    gap: 20px;
+}
+
+.header {
+    background-color: black;
+    padding: 50px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bolder;
+    padding-left: 50px;
+}
