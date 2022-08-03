@@ -2,56 +2,32 @@ body {
     margin: 0;
 }
 
-.square {
-    width: 40px;
-    height: 40px;
+.container {
+    display: grid;
+    width: 670px;
+    height: 670px;
     border: 1px solid black;
 }
 
-.container {
-    display: flex;
-    border: 2px solid black;
-    width: 670px;
-    background-color: white;
+.mid {
+    background-color: darkblue;
 }
 
-.black {
-    background-color: black;
+.square {
+    border: 1px solid black;
+    background-color: white;
 }
 
 .mid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    padding: 80px;
-    background-color: darkblue;
+    justify-content: center;
+    gap: 30px;
+    padding: 120px;
 }
 
-.clear {
-    width: 100px;
-    height: 40px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 8px;
-}
-
-.header {
+.black {
     background-color: black;
-    display: flex;
-    padding: 50px;
-    justify-content: space-between;
 }
 
-.title {
-    color: aliceblue;
-    font-size: 32px;
-    font-weight: bold;
-    padding-left: 100px;
-}
-
-.byline {
-    color: aliceblue;
-    font-size: 20px;
-    padding-top: 40px;
-}

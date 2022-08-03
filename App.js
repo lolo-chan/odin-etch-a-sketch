@@ -1,25 +1,28 @@
-const grid = document.querySelector('.container');
-const clear = document.querySelector('button');
-const n=16;
+const clearBtn = document.querySelector('.clear');
 
-for (let j = 0; j < 16; j++){
-    let column = document.createElement('div');
-    for (let i =0; i < n; i++){
-        const square = document.createElement('div');
-        column.appendChild(square);
+
+function generateGrid(n) {
+
+    let grid = document.querySelector('.container');
+    let squares = grid.querySelectorAll('div');
+    squares.forEach((div) => div.remove());
+    grid.style.gridTemplateRows = `repeat(${n}, 1fr)`;
+    grid.style.gridTemplateColumns = `repeat(${n}, 1fr)`;
+
+    for (let i = 0; i < n*n; i++) {
+        let square = document.createElement('div');
+        grid.appendChild(square);
         square.classList.add('square');
-        square.addEventListener('mouseover', (e) => {
-            e.target.classList.add('black');
+        square.addEventListener('mouseover', () => {
+            square.classList.add('black');
         });
-        clear.addEventListener('click', () => {
+        clearBtn.addEventListener('click', () => {
             square.classList.remove('black');
-        });
+        } )
+        
     }
-    grid.appendChild(column);
 }
 
 
 
 
-
-// document.getElementById('container').appendChild(squares);
