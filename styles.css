@@ -50,3 +50,16 @@ body {
     font-weight: bolder;
     padding-left: 50px;
 }
+
+.valuedisplay {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.clear {
+    width: 75px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+}
